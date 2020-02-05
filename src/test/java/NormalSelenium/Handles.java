@@ -1,6 +1,8 @@
 package NormalSelenium;
 
 import java.time.Duration;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Set;
 
 
@@ -29,11 +31,20 @@ public class Handles {
 		 
 
 		Set<String> windowHandles = driver.getWindowHandles();
-		for (String string : windowHandles) {
+		List<String> li =new ArrayList<String>();
+		String string2 = li.get(3);
+		driver.switchTo().window(string2);
+		li.add(windowHandle);
+		/*for (String string : windowHandles) {
 			if(!windowHandle.equalsIgnoreCase(string)) {
 				driver.switchTo().window(string);
 				
-			}
+			}*/
+		for (String string : li) {
+			if(!windowHandle.equalsIgnoreCase(string)) {
+				driver.switchTo().window(string);
+			
+		}
 			 
 		wait.until(ExpectedConditions.elementToBeClickable( driver.findElement(By.xpath("//a[@class='tp-button orange large']"))))	.click();
 			 

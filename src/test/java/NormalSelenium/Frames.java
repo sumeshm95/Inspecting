@@ -6,6 +6,7 @@ import java.util.concurrent.TimeUnit;
 
 
 import org.openqa.selenium.JavascriptExecutor;
+//import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -23,6 +24,7 @@ public class Frames {
 		 JavascriptExecutor je= (JavascriptExecutor)driver;
 	WebElement findElement = frame.findElement(By.xpath("(//span[contains(text(),'Selenium C Sharp')])[1]"));
 	je.executeScript("arguments[0].click()", findElement);
+
 	
 	
 		

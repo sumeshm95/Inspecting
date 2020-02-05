@@ -24,7 +24,7 @@ public class AlertsPratice {
 		 * 
 		 * alert.dismiss();;
 		 */
-		
+	
 		WebElement findElement = driver.findElement(By.xpath("//button[@id='timingAlert']"));
 		((JavascriptExecutor) driver).executeScript("arguments[0].click()",findElement);
 		WebDriverWait wait= new WebDriverWait(driver, 8);

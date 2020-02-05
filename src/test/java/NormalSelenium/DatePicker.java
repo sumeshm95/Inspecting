@@ -36,10 +36,12 @@ System.out.println(size);
 	}
 	
 		
-			  if(text.equalsIgnoreCase("22")) {
+			  if(text.equalsIgnoreCase("30")) {
 			  wait.until(ExpectedConditions.elementToBeClickable(webElement)).click();
 			  
+			  
 			  break; }
+			  
 			 
 		
 			
